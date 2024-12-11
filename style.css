@@ -57,7 +57,7 @@ footer a {
 
 .bck-img-sec {
     width: 50%;
-    background-image: url('/img/bck.jpg');
+    background-image: url('./img/bck.jpg');
     background-size: cover;
 }
 
