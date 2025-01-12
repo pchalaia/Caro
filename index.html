@@ -1,83 +1,219 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="libs/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://use.typekit.net/yxi8vmf.css">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#44513e">
+    <link rel="mask-icon" href="./assets/safari-pinned-tab.svg" color="#44513e">
     <meta name="msapplication-TileColor" content="#44513e">
     <meta name="theme-color" content="#44513e">
 
-    <title>L'étable 67 - Das Grüne café</title>
+    
+
+    <title>L’étable 67 - Das Grüne café</title>
 </head>
 
-<body>
-    <header>
-        <h1>L'étable 67 - Das Grüne café</h1>
+<body class="bg-green">
+    <header class="header">
+    <div class="container flex align-center space-between">
+            <div>
+                <a href="./index.html"><img src="./assets/l'etable67_logo.svg" alt="L'Etable 67 logo" class="site-logo"></a>
+            </div>
+            <nav class="site-nav flex flex-end">
+                <ul>
+                    <li><a href="./about-us.html">Über uns</a></li>
+                    <li><a href="#">Menü</a></li>
+                    <li><a href="#">Kontakt</a></li>
+                  </ul>
+            </nav>
+        </div>    
     </header>
-    <main class="container">
-        <section class="bck-img-sec">
-            <div class="bck-logo">
-                <svg id="L_etanle_Bildmarke" data-name="L&apos;etanle Bildmarke" xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 578.312 584.171">
-                    <path id="Tracé_1132" data-name="Tracé 1132"
-                        d="M117.136,210.459c-17.114-1.209-35.2,7.618-50.314,16.566a135.385,135.385,0,0,1,.6-20.5c7.2-75.815,55.877-133.613,112.359-180.166,5.322-4.353.121-14.51-6.471-10.882-43.238,24.244-79.462,68.8-100.99,112.694C60.231,152.842,45.717,200.3,50.616,237,38.7,244.437,24.491,254.352,21.1,266.746c-1.754,6.53,5.866,11.789,10.643,6.106,5.987-7.134,13.909-13.724,22.677-19.589,6.35,18.017,19.654,31.2,43.722,33.675,44.75,4.716,65.734-73.154,18.989-76.48Zm8.1,39.3c-4.173,22.007-29.209,24.183-43.843,11.366a40.718,40.718,0,0,1-11.429-17.231A219.4,219.4,0,0,1,94.7,232.526c17.356-6.711,35.437-8.646,30.539,17.291Z"
-                        transform="translate(105.218 74.287)" fill="#fff" />
-                    <path id="Tracé_1133" data-name="Tracé 1133"
-                        d="M413.287,105.661c-44.448,4.413-90.408,20.858-133.1,37.545A622.4,622.4,0,0,0,291.8,71.925c5.564-56.831-43.662-79.2-91.98-69.89C136.259,14.309,76.874,46.23,32.426,93.207c-4.415,4.655,3.447,12.515,8.043,7.92C82.8,58.927,138.738,29.846,197.4,18.238c18.323-3.627,36.284-6.711,53.64,2.418,40.275,21.221,20.561,74.605,12.337,109.429-1.693,7.315-3.508,14.57-5.382,21.825-1.27.484-2.54,1.028-3.81,1.511a991.067,991.067,0,0,0-148.522,73.94c-5.866,3.567.121,13.784,6.229,10.459a1338.956,1338.956,0,0,1,141.084-66.444,1573.668,1573.668,0,0,1-52.793,162.33c-11.55,29.927-24.008,59.551-37.614,88.692-11.248,24.062-27.757,48.064-35.2,73.578-2.419,8.283,6.773,13.361,12.7,7.255,21.891-22.37,34.288-57.859,46.927-85.911,16.63-37,31.386-74.847,44.811-113.117,15.965-45.465,32.051-93.166,43.9-141.351,46.625-16.505,95.185-26.783,141.387-44.014,7.5-2.781,3.87-13.905-3.689-13.18Z"
-                        transform="translate(157.092 0.008)" fill="#fff" />
-                    <path id="Tracé_1134" data-name="Tracé 1134"
-                        d="M55.751,269.223c.6-10.157,1.149-20.254,1.633-30.229,1.935-37.605,2.661-75.331,1.451-113-.544-18.319-1.572-36.7-3.387-54.957C54,56.229,53.816,37.547,46.317,24.186c-10.16-18.077-25.4-7.255-32.535,6.832C-1.638,61.791-1.4,99.638,1.628,132.95c4.656,50.543,17.719,100.663,39.308,146.611-2.177,46.855-5.684,95.1-17.84,139.477-1.572,5.8,6.894,9.613,8.829,3.627,12.337-37.907,18.021-78.535,21.347-118.982a380.292,380.292,0,0,0,29.692,45.4c45.657,59.612,104.982,127.93,174.284,160.275,7.378,3.446,14.09-7.92,7.2-12.515C180.205,441.106,100.623,361.785,55.691,269.223ZM15.355,96.071c.6-15.477,2.661-30.894,7.68-45.646,1.451-4.232,3.447-12.938,6.954-15.659,6.41-4.958,6.652,13.24,7.5,19.286,8.829,61,7.741,123.939,5.14,185.3-1.633-4.232-3.266-8.464-4.777-12.757-14.7-41.837-24.31-86.093-22.557-130.59Z"
-                        transform="translate(-0.001 74.168)" fill="#fff" />
-                    <path id="Tracé_1135" data-name="Tracé 1135"
-                        d="M19.024,19.254C51.135,37.392,56.4,65.021,53.433,99.3c-.544,6.529,9.373,9.976,11.611,3.144C77.562,63.812,60.025,25.481,23.076,9.4c-6.471-2.842-9.918,6.59-4.112,9.855Z"
-                        transform="translate(80.751 44.819)" fill="#fff" />
-                </svg>
-                <img class="mobile-logo" src="./img/L67SchriftzugmitUnterzeileweiss.svg" alt="logo">
+    <main>
+        <section class="bg-green">
+            <div class="container">
+                <div class="hero">
+                    <div class="hero-img" role="img" aria-label="Interior of Café L'Etable in green and natural colors">
+                    </div>
+                </div>
+                <article class="page-description text-white gap-l">
+                    <div class="col-7">
+                        <h1 class="description-style">L’Étable 67 in Hergenrath ist ein modernes Café mit Fokus auf Regionalität und Nachhaltigkeit. 
+                            Hier treffen Elsässer Spezialitäten auf lokales Flair, mit einer Auswahl von vegetarischen und veganen 
+                            Gerichten bis hin zu authentischen Flammkuchen. Genießen Sie die gemütliche Atmosphäre drinnen oder 
+                            entspannen Sie sich auf der Terrasse.</h1>
+                    </div>
+                    <div class="col-3 flex flex-col gap-s">
+                        <h2>Öffnungszeiten:</h2>
+                        <div>
+                            <p class="weight-600">Mi. & So.: 12.00 – 21.00 Uhr</p>
+                            <p>Die Küche schließt um 20 Uhr</p>
+                        </div>
+                        <div>
+                            <p class="weight-600">Do., Fr. & Sa.: 12.00 – 22.00 Uhr</p>
+                            <p>Die Küche schließt um 20:30 Uhr</p>
+                        </div>
+                        <h2>Adresse:</h2>
+                        <div>
+                            <p>Bahnhofstraße 67</p>
+                            <p>4728 Hergenrath, Belgien</p>
+                        </div>
+                        <div>
+                            <p class="weight-600 text-m">+32 470 12 78 67</p>
+                        </div>
+                    </div>
+                </article>
             </div>
         </section>
 
-        <section class="text-content">
-            <article class="text-logo">
-                <img src="./img/L67SchriftzugmitUnterzeileweiss.svg" alt="logo">
-            </article>
-
-            <article class="opening-hours">
-                <h2>Öffnungszeiten:</h2>
-                <p>Mi. &amp; So.:           12.00 – 21.00 Uhr</p>
-				<p style="margin-bottom: 20px"><small>Die Küche schließt um 20 Uhr</small></p>
-				
-                <p>Do., Fr. &amp; Sa.:      12.00 – 22.00 Uhr</p>
-				<p><small>Die Küche schließt um 20:30 Uhr</small></p>
-                <p class="reservation-text">Reservierungen möglich ab 10 Personen</p>
-            </article>
-
-            <article class="contact">
-                <div>
-                    <p>CAFE 67 GmbH</p>
-                    <p>Bahnhofstraße 67</p>
-                    <p>4728 Hergenrath</p>
+        <section class="bg-light">
+            <div class="container">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="./assets/caroline_steffens.jpg">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./assets/caroline_steffens.jpg">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./assets/caroline_steffens.jpg">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./assets/caroline_steffens.jpg">
+                        </div>
+                    </div>
+                    <!-- Optional: Navigation -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
                 </div>
 
-                <div class="contact-links">
-                    <a href="tel:+32 470 12 78 67">+32 470 12 78 67</a>
-                    <a href="mailto:info@letable67.com">info@letable67.com</a>
-                    <a class="instagram" href="https://www.instagram.com/letable67?igsh=a3IxZ25qeXhwd3Uw"><img src="./img/InstagramIcon.svg" alt="instagram icon">letable67</a>
-                </div>
-            </article>
+                <article class="nav-article flex gap-l">
+                    <div class="col-5 nav-img flex">
+                        <img class="rotate" src="./assets/caroline_steffens.jpg">
+                    </div>
+                    <div class="col-5 nav-description flex flex-col gap-s">
+                        <div>
+                            <span class="subheadings text-green">Von Straßburg nach Hergenrath –</span>
+                            <h2 class="headings text-green">Die Geschichte hinter L’Étable 67</h2>
+                        </div>
+                        <div>
+                            <p class="text-green">Caroline Steffens, die Gründerin von L’Étable 67, ist eine leidenschaftliche Gastronomin und in der Region 
+                                verwurzelt. Nach ihrer Ausbildung in Spa sammelte sie sieben Jahre lang Erfahrung in Straßburg, das ihr Konzept
+                                 maßgeblich inspiriert hat. Die Zahl „67“ im Namen des Cafés ist eine Hommage an die Region Elsass, die ihre 
+                                 gastronomische Leidenschaft geprägt hat.</p>
+                        </div>
+                        <a href="./about-us.html" class="btn-green text-green">
+                            Mehr über uns
+                        </a>
+                    </div>
+                </article>
+                <article class="nav-article flex flex-reverse gap-l">
+                    <div class="col-5 nav-img flex">
+                        <img class="reverse-rotate" src="./assets/caroline_steffens.jpg">
+                    </div>
+                    <div class="col-5 nav-description flex flex-col gap-s">
+                        <div>
+                            <span class="subheadings text-green">Ein Genuss aus regionalen Zutaten und französischem Flair –</span>
+                            <h2 class="headings text-green">Unser Menü</h2>
+                        </div>
+                        <div>
+                            <p class="text-green">Wir laden euch herzlich ein, unsere vielfältige Auswahl zu entdecken – von vegetarischen und veganen 
+                                Köstlichkeiten bis hin zu unseren authentischen Flammkuchen, deren Zutaten wir aus Straßburg und der Region beziehen. 
+                                Auf der regelmäßig wechselnden Speisekarte finden sich kleine Gerichte, Suppen, Charcuterie-Platten und hausgemachte Kuchen.</p>
+                        </div>
+                        <button class="btn-green text-green">
+                            Speisekarte ansehen
+                        </button>
+                    </div>
+                </article>
+            </div>
+        </section>
 
+        <section class="bg-green text-center">
+            <div class="container">
+                <article class="text-white">
+                    <div class="flex flex-col gap-s align-center">
+                        <h2 class="headings-on-green">Anfahrt zu L’étable 67</h2>
+                        <p class="short-par">Unser Café L’étable 67 liegt inmitten der idyllischen Umgebung von Hergenrath und ist einfach zu erreichen. 
+                            Sie finden uns in der <strong>Bahnhofstraße 67, 4728 Hergenrath, Belgien</strong>, direkt gegenüber vom Bahnhof Hergenrath.
+                        </p>
+                        <img class="anfahrt-img" src="./assets/l'etable67_cafe_building_view.webp">
+                        <div class="flex flex-col gap-l">
+                            <div class="flex flex-col gap-s align-center">
+                                <h3 class="subheadings">Anreise mit dem Auto</h3>
+                                <p class="short-par">Von Kelmis aus folgen Sie der Hauptstraße Richtung Hergenrath. 
+                                    Kostenfreie Parkplätze stehen in unmittelbarer Nähe des Cafés zur Verfügung.
+                                </p>
+                            </div>
+                            <div class="flex flex-col gap-s align-center">
+                                <h3 class="subheadings">Anreise mit der Bahn</h3>
+                                <p class="short-par">Wenn Sie mit der Bahn kommen, steigen Sie einfach am Bahnhof Hergenrath aus. 
+                                    Unser Café befindet sich nur wenige Schritte entfernt, sodass Sie nach einer entspannten Zugfahrt bequem zu uns gelangen können.
+                                </p>
+                            </div>
+                            <div class="flex flex-col gap-s align-center">
+                                <h3 class="subheadings">Weitere Informationen</h3>
+                                <p class="short-par">Das Café ist auch ein idealer Ausgangspunkt für Spaziergänge in der malerischen Natur der Umgebung. 
+                                    Ob Sie aus der Region oder aus den benachbarten Städten wie Aachen kommen – wir freuen uns auf Ihren 
+                                    Besuch und bieten Ihnen eine nachhaltige und entspannte Auszeit im Grünen.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
         </section>
     </main>
-    <footer>
-        <a href="tel:+32 470 12 78 67">+32 470 12 78 67</a>
-        <a href="mailto:info@letable67.com">info@letable67.com</a>
+    <footer class="bg-green container">
+        <div class="abbinder flex">
+            <span class="separator"></span>
+            <img src="./assets/l'etable67_logo.svg" alt="L'Etable 67 logo" class="site-logo">
+            <span class="separator"></span>
+        </div>
+        <section class="nav-container flex space-between">
+            <nav class="footer-nav">
+                <label>Navigation</label>
+                <ul>
+                    <li><a href="./about-us.html">Über uns</a></li>
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="#">Anreise</a></li>
+                </ul>
+            </nav>
+            <nav class="footer-nav">
+                <label>Folgen Sie uns</label>
+                <ul>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Facebook</a></li>
+                </ul>
+            </nav>
+            <nav class="footer-nav">
+                <label>Kontakt</label>
+                <ul>
+                    <li><a href="tel:+32 470 12 78 67">+32 470 12 78 67</a></li>
+                    <li><a href="mailto:info@letable67.com">info@letable67.com</a></li>
+                    <li>Bahnhofstraße 67 <br>
+                        4728 Hergenrath <br>
+                        Belgien</li>
+                </ul>
+            </nav>
+            <nav class="footer-nav">
+                <label>Rechtliches</label>
+                <ul>
+                    <li><a href="#">Impressum</a></li>
+                    <li><a href="#">Datenschutz</a></li>
+                </ul>
+            </nav>
+        </section>
+        <p class="text-center text-white">© 2024 All rights reserved. CAFE 67 GmbH </p>
     </footer>
+    <script src="libs/swiper/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
