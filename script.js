@@ -1,6 +1,6 @@
 var swiper = new Swiper('.swiper-container', {
   loop: true,
-  centeredSlides: true,
+  
   autoplay: {
     delay: 3000,
     disableOnInteraction: false,
@@ -14,8 +14,16 @@ var swiper = new Swiper('.swiper-container', {
     clickable: true,
   },
   breakpoints: {
+    370: {
+      slidesPerView: 1.2, // Ein Slide ist vollständig sichtbar + Teile der nächsten/letzten Slides
+      centeredSlides: true,
+      spaceBetween: 10, // Abstand zwischen Slides
+    },
+
     768: {
-      slidesPerView: 1.5, // Ein Slide ist vollständig sichtbar + Teile der nächsten/letzten Slides
+      slidesPerView: 1.2, // Ein Slide ist vollständig sichtbar + Teile der nächsten/letzten Slides
+      centeredSlides: true,
+      spaceBetween: 20, // Abstand zwischen Slides
     },
     1024: {
       slidesPerView: 2,

@@ -131,12 +131,19 @@ section {
 
 .hero {
     height: 80vh;
-    background-image: url("./assets/l'etable67_hero-img.webp");
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 30px;
     margin-bottom: 4rem;
     background-position: center;
+}
+
+.index-img {
+    background-image: url("./assets/l'etable67_hero-img.webp");
+}
+
+.about-us-img {
+    background-image: url("./assets/Hero picture about us.webp");
 }
 
 .nav-article {
@@ -340,6 +347,7 @@ section {
   color: #44513E;
 }
 
+  
 
 /* buttons */
 
@@ -509,4 +517,9 @@ footer p {
     .headings-on-green {
         font-size: 1.9rem;
     }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        display: none !important;
+  }
   }
