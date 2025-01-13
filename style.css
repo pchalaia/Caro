@@ -89,7 +89,7 @@ input, button, textarea, select {
 
 .headings {
     text-transform: uppercase;
-    font-weight: 700;
+    font-weight: 670;
     font-size: 2.8rem;
 }
 
@@ -102,7 +102,7 @@ input, button, textarea, select {
 .subheadings {
     text-transform: uppercase;
     letter-spacing: 4px;
-    font-weight: 600;
+    font-weight: 570;
     font-size: 1rem;
 }
 
@@ -175,6 +175,11 @@ section {
     font-weight: 300;
     max-width: 40ch;
 }
+
+.tel-link {
+    color: white;
+    text-decoration: none;
+}
   
 
 /* utility classes */
@@ -196,7 +201,7 @@ section {
 }
 
 .weight-600 {
-    font-weight: 600;
+    font-weight: 570;
 }
 
 .gap-s {
@@ -289,6 +294,10 @@ section {
     padding-top: 4rem;
     padding-bottom: 4rem;
     overflow: hidden;
+}
+
+.swiper-wrapper {
+    align-items: center;
 }
 
 
@@ -410,7 +419,7 @@ footer {
 
 footer label {
     text-transform: uppercase;
-    font-weight: 600;
+    font-weight: 570;
     font-size: 1rem;
     color: white;
 }
@@ -501,5 +510,3 @@ footer p {
         font-size: 1.9rem;
     }
   }
-
-  
