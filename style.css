@@ -99,9 +99,15 @@ input, button, textarea, select {
     font-size: 2.8rem;
 }
 
+.headings-small {
+    font-size: 2.2rem;
+    text-transform: uppercase;
+    font-weight: 670;
+}
+
 .subheadings {
     text-transform: uppercase;
-    letter-spacing: 4px;
+    letter-spacing: 3px;
     font-weight: 570;
     font-size: 1rem;
 }
@@ -119,7 +125,7 @@ img, picture, video, canvas, svg {
 }
 
 section {
-    padding: 4rem 1rem;
+    padding: 4rem 0;
     margin: 4vh auto;
 }
 
@@ -127,6 +133,14 @@ section {
     max-width: 1300px;
     width: 100%;
     margin: auto;
+    padding: 0 1rem;
+}
+
+.caroussel-container {
+    max-width: 1300px;
+    width: 100%;
+    margin: auto;
+    padding: 0 1rem;
 }
 
 .hero {
@@ -235,6 +249,10 @@ section {
     justify-content: flex-end;
 }
 
+.flex-center {
+    justify-content: center;
+}
+
 .flex-col {
     flex-direction: column;
 }
@@ -249,6 +267,10 @@ section {
 
 .align-center {
     align-items: center;
+}
+
+.align-baseline {
+    align-items: baseline;
 }
 
 .space-between {
@@ -269,6 +291,10 @@ section {
 
 .p-l {
     padding-left: 1.2rem;
+}
+
+.p-b {
+    padding-bottom: 3rem;
 }
 
 .col-7 {
@@ -367,7 +393,10 @@ section {
     text-decoration: none;
 }
 
-.btn-green:hover {
+.btn-green:hover,
+.btn-green:active,
+.btn-green:focus,
+.btn-green[aria-selected="true"] {
     background: #44513E;
     color: #FFFCF6;
 }
@@ -388,8 +417,29 @@ section {
     text-decoration: none;
 }
 
-.btn-light:hover {
+.btn-light:hover,
+.btn-light:active,
+.btn-light:focus {
     background: #FFFCF6;
+    color: #44513E;
+}
+
+.btn-wrapper {
+    padding: .3rem;
+    border: 1px solid #44513E;
+    border-radius: 30px;
+    display: inline-block;
+}
+
+#food-button,
+#drinks-button {
+    margin-top: 0;
+    border: none;
+}
+
+#food-button:hover,
+#drinks-button:hover {
+    background: #44513e34;
     color: #44513E;
 }
 
@@ -513,13 +563,136 @@ footer p {
         padding: 1rem 0;
     }
 
+    .swiper-button-next,
+    .swiper-button-prev {
+        display: none !important;
+  }
+
+    .caroussel-container {
+        max-width: 100%;
+        padding: 0;
+    }
+
+    .description-style {
+        font-size: 1.5rem;
+    }
+
     .headings, 
     .headings-on-green {
         font-size: 1.9rem;
     }
 
-    .swiper-button-next,
-    .swiper-button-prev {
-        display: none !important;
+    p {
+        font-size: 1rem;
+    }
+    .subheadings {
+        font-size: .9rem;
+    }
+
+    .headings-small {
+        font-size: 1.6rem;
+    }
+
+    .menu-wrapper {
+        gap: 1rem !important;
+    }
+
+    .single-menu-item .flex {
+        flex-direction: row;
+    } 
   }
-  }
+
+
+  /*
+    menu page
+  */
+
+.menu-hero {
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+}
+
+.single-menu-item {
+    margin: 20px 0;
+    text-align: left;
+    gap: 1rem;
+}
+
+.menu-name {
+    margin: 0;
+}
+
+.menu-price {
+    margin: 0;
+}
+
+.dotted-line {
+    flex-grow: 1;
+    border-bottom: 2px dotted #44513E;
+    margin-right: 10px; 
+}
+
+.menu-description {
+    max-width: 45ch;
+}
+
+.menu-wrapper {
+    gap: 4rem;
+}
+
+
+/*
+    FAQ
+*/
+.faq {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.accordion-item {
+    border-bottom: 1px solid #ccc;
+    padding: 1rem 0;
+}
+
+.accordion-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background: none;
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: left;
+    cursor: pointer;
+    padding: .5rem 1rem;
+    outline: none;
+    transition: color 0.3s ease;
+}
+
+.accordion-header:hover,
+.accordion-header:active,
+.accordion-header[aria-expanded="true"] {
+    background: #44513e34;
+    border-radius: 30px;
+}
+
+.icon {
+    transform: rotate(0deg);
+    transition: transform 0.3s ease;
+}
+
+.accordion-header[aria-expanded="true"] .icon {
+    transform: rotate(180deg);
+}
+
+.accordion-panel {
+    padding: 2rem 1rem;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    text-align: left;
+}
