@@ -612,6 +612,8 @@ footer p {
 
     .site-nav {
         width: 100%;
+        justify-content: space-between;
+
     }
 
     .site-nav ul {
