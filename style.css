@@ -513,7 +513,7 @@ footer p {
     }
 
     .site-nav ul {
-        gap: 4rem;
+        gap: 2rem;
     }
 
     .site-logo {
@@ -685,6 +685,7 @@ footer p {
     transform: rotate(0deg);
     transition: transform 0.3s ease;
     min-width: 40px;
+    width: 40px !important;
 }
 
 .accordion-header[aria-expanded="true"] .icon {
