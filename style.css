@@ -513,7 +513,7 @@ footer p {
     }
 
     .site-nav ul {
-        gap: 2rem;
+        gap: .5rem;
     }
 
     .site-logo {
