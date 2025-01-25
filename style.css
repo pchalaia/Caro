@@ -617,7 +617,7 @@ footer p {
     }
 
     .site-nav ul {
-        gap: .5rem;
+        gap: 2rem;
         justify-content: space-between;
     }
 
