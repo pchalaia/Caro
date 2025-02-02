@@ -296,6 +296,10 @@ section {
     padding-bottom: 3rem;
 }
 
+.p-t {
+    padding-top: 3rem;
+}
+
 .col-7 {
     width: 70%;
 }
@@ -594,6 +598,20 @@ footer p {
     font-size: 0.9rem;
     line-height: 1.5;
     text-align: left;
+}
+
+
+/* Contact Page */
+
+.open-hrs {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.open-hrs .menu-price.subheadings {
+    text-transform: none;
+    letter-spacing: 2px;
 }
 
 
