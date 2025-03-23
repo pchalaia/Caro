@@ -79,6 +79,12 @@ p {
     text-wrap: pretty;
     font-size: 1.2rem;
 }
+
+p.fr {
+    font-size: .9rem;
+    margin-top: -.6rem;
+}
+
 h1, h2, h3, h4, h5, h6 {
     text-wrap: balance;
 }
@@ -112,6 +118,10 @@ input, button, textarea, select {
     font-size: 1rem;
 }
 
+.sub-fr {
+    font-size: .8rem;
+}
+
 /* Layout */
   
 body {
@@ -119,7 +129,7 @@ body {
     -webkit-font-smoothing: antialiased;
     margin: 0 auto;
 }
-img, picture, video, canvas, svg {
+img, picture, video, canvas, svg, span {
     display: block;
     max-width: 100%;
 }
@@ -435,13 +445,15 @@ section {
 }
 
 #food-button,
-#drinks-button {
+#drinks-button,
+#breakfast-button {
     margin-top: 0;
     border: none;
 }
 
 #food-button:hover,
-#drinks-button:hover {
+#drinks-button:hover,
+#breakfast-button:hover {
     background: #44513e34;
     color: #44513E;
 }
@@ -508,6 +520,10 @@ footer p {
     menu page
   */
 
+  .menu-col {
+    width: 100%;
+  }
+
   .menu-hero {
     min-height: 400px;
     display: flex;
@@ -529,6 +545,7 @@ footer p {
 
 .menu-price {
     margin: 0;
+    min-width: 3.2rem;
 }
 
 .dotted-line {
@@ -539,6 +556,7 @@ footer p {
 
 .menu-description {
     max-width: 45ch;
+    font-size: 1rem;
 }
 
 .menu-wrapper {

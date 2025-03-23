@@ -41,135 +41,630 @@
                     </div>
                     
                     <div class="btn-wrapper flex p-b" role="tablist" aria-label="menutype list">
+                        <button class="btn-green text-green" id="breakfast-button" aria-selected="false" role="tab" aria-controls="breakfast-tab" tabindex="0">Frühstück</button>
                         <button class="btn-green text-green" id="food-button" aria-selected="true" role="tab" aria-controls="food-tab" tabindex="0">Speisen</button>
-                        <button class="btn-green text-green" id="drinks-button" aria-selected="false" role="tab" aria-controls="drinks-tab" tabindex="-1">Getränke</button>
+                        <button class="btn-green text-green" id="drinks-button" aria-selected="false" role="tab" aria-controls="drinks-tab" tabindex="0">Getränke</button>
                     </div>
                 </div>
+
+                <!-- Frühstück -->
+                <article id="breakfast-tab" role="tabpanel" tabindex="0" hidden>
+                    <!-- Frühstück – Start -->
+                    <div class="flex flex-col align-center gap-s p-b">
+                        <h2 class="headings-small text-green">Frühstückskarte</h2>
+                        <p class="short-par">Kategoriebeschreibung. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt.</p>
+                    </div>
+                    <div class="menu-wrapper flex space-between">
+                        <div class="menu-col flex flex-col gap-s">
+                            <!-- Linke Spalte – Gericht 1 -->
+                            <div class="single-menu-item flex flex-col">
+                                <div class="flex space-between align-baseline">
+                                    <h3 class="menu-name subheadings">Baguette</h3>
+                                    <div class="dotted-line"></div>
+                                    <p class="menu-price subheadings">5,50 €</p>
+                                </div>
+                                <p class="menu-description">mit hausgemachter Konfitüre und Butter</p>
+                                <p class="menu-description fr text-green">avec confiture maison et beurre</p>
+                            </div>
+                            <!-- Linke Spalte – Gericht 2 -->
+                            <div class="single-menu-item flex flex-col">
+                                <div class="flex space-between align-baseline">
+                                    <h3 class="menu-name subheadings">Croissant</h3>
+                                    <div class="dotted-line"></div>
+                                    <p class="menu-price subheadings">6 €</p>
+                                </div>
+                                <p class="menu-description">mit Butter und hausgemachter Konfitüre</p>
+                                <p class="menu-description fr text-green">avec beurre et confiture maison</p>
+                            </div>
+                            <!-- Linke Spalte – Gericht 3 -->
+                            <div class="single-menu-item flex flex-col">
+                                <div class="flex space-between align-baseline">
+                                    <h3 class="menu-name subheadings">Ein Spiegel-Ei und Baguette 
+                                        <span class="sub-fr text-green">Un œuf au plat et baguette</span>
+                                    </h3>
+                                    <div class="dotted-line"></div>
+                                    <p class="menu-price subheadings">15,50 €</p>
+                                </div>
+                                <p class="menu-description">mit Käse-Schinken, Butter und Konfitüre</p>
+                                <p class="menu-description fr text-green">avec fromage, jambon, beurre et confiture</p>
+                            </div>
+                            <!-- Linke Spalte – Gericht 4 -->
+                            <div class="single-menu-item flex flex-col">
+                                <div class="flex space-between align-baseline">
+                                    <h3 class="menu-name subheadings">Egg Benedict</h3>
+                                    <div class="dotted-line"></div>
+                                    <p class="menu-price subheadings">16,50 €</p>
+                                </div>
+                                <p class="menu-description">– Lachs +3,50 €</p>
+                                <p class="menu-description fr text-green">– Saumon +3,50 €</p>
+                                <p class="menu-description">– Bacon +2 €</p>
+                            </div>
+                            <!-- Linke Spalte – Gericht 5 -->
+                            <div class="single-menu-item flex flex-col">
+                                <div class="flex space-between align-baseline">
+                                    <h3 class="menu-name subheadings">Rührei I
+                                        <span class="sub-fr text-green">Œufs brouillés I</span>
+                                    </h3>
+                                    <div class="dotted-line"></div>
+                                    <p class="menu-price subheadings">9,50 €</p>
+                                </div>
+                                <p class="menu-description">mit Baguette und Butter</p>
+                                <p class="menu-description fr text-green">avec baguette et beurre</p>
+                            </div>
+                            <!-- Linke Spalte – Gericht 6 -->
+                            <div class="single-menu-item flex flex-col">
+                                <div class="flex space-between align-baseline">
+                                    <h3 class="menu-name subheadings">Rührei II
+                                        <span class="sub-fr text-green">Œufs brouillés II</span>
+                                    </h3>
+                                    <div class="dotted-line"></div>
+                                    <p class="menu-price subheadings">10,50 €</p>
+                                </div>
+                                <p class="menu-description">mit Schinken, Butter und Baguetter</p>
+                                <p class="menu-description fr text-green">avec jambon, beurre et baguette</p>
+                            </div>
+                            <!-- Linke Spalte – Gericht 7 -->
+                            <div class="single-menu-item flex flex-col">
+                                <div class="flex space-between align-baseline">
+                                    <h3 class="menu-name subheadings">Rührei III
+                                        <span class="sub-fr text-green">Œufs brouillés III</span>
+                                    </h3>
+                                    <div class="dotted-line"></div>
+                                    <p class="menu-price subheadings">12,50 €</p>
+                                </div>
+                                <p class="menu-description">mit Räucherlachs, Butter und Baguette</p>
+                                <p class="menu-description fr text-green">avec saumon fumé, beurre et baguette</p>
+                            </div>
+                            <!-- Linke Spalte – Gericht 8 -->
+                            <div class="single-menu-item flex flex-col">
+                                <div class="flex space-between align-baseline">
+                                    <h3 class="menu-name subheadings">Lachs-Frühstück
+                                        <span class="sub-fr text-green">Petit-déjeuner au saumon </span>
+                                    </h3>
+                                    <div class="dotted-line"></div>
+                                    <p class="menu-price subheadings">18,50 €</p>
+                                </div>
+                                <p class="menu-description">mit Kräuterfrischkäse, Butter, Baguette und einem gekochten Ei</p>
+                                <p class="menu-description fr text-green">avec fromage frais aux herbes, beurre, baguette et un œuf dur</p>
+                            </div>
+                            <!-- Linke Spalte – Gericht 9 -->
+                            <div class="single-menu-item flex flex-col">
+                                <div class="flex space-between align-baseline">
+                                    <h3 class="menu-name subheadings">Käsesortiment (5 Käsesorten)
+                                        <span class="sub-fr text-green">Plateau de fromages (5 variétés)</span>
+                                    </h3>
+                                    <div class="dotted-line"></div>
+                                    <p class="menu-price subheadings">17,50 €</p>
+                                </div>
+                                <p class="menu-description">mit einem gekochten Ei, Butter und Baguette</p>
+                                <p class="menu-description fr text-green">avec un œuf dur, beurre et baguette </p>
+                            </div>
+                        </div>
+
+                        <div class="menu-col flex flex-col gap-s">
+                            <!-- Rechte Spalte – Gericht 1 -->
+                            <div class="single-menu-item flex flex-col">
+                                <div class="flex space-between align-baseline">
+                                    <h3 class="menu-name subheadings">Aufschnitt-Teller (4 Sorten Aufschnitt)
+                                        <span class="sub-fr text-green">Plateau de charcuterie (4 sortes)</span>
+                                    </h3>
+                                    <div class="dotted-line"></div>
+                                    <p class="menu-price subheadings">17,50 €</p>
+                                </div>
+                                <p class="menu-description">mit gekochtem Ei, Butter und Baguette</p>
+                                <p class="menu-description fr text-green">avec œuf dur, beurre et baguette</p>
+                            </div>
+                            <!-- Linke Spalte – Gericht 2 -->
+                            <div class="single-menu-item flex flex-col">
+                                <div class="flex space-between align-baseline">
+                                    <h3 class="menu-name subheadings">Pancakes I</h3>
+                                    <div class="dotted-line"></div>
+                                    <p class="menu-price subheadings">12,50 €</p>
+                                </div>
+                                <p class="menu-description">mit Früchten und Honig</p>
+                                <p class="menu-description fr text-green">avec fruits et miel</p>
+                            </div>
+                            <!-- Linke Spalte – Gericht 3 -->
+                            <div class="single-menu-item flex flex-col">
+                                <div class="flex space-between align-baseline">
+                                    <h3 class="menu-name subheadings">Pancakes II</h3>
+                                    <div class="dotted-line"></div>
+                                    <p class="menu-price subheadings">13 €</p>
+                                </div>
+                                <p class="menu-description">mit Schokosauce und Früchten</p>
+                                <p class="menu-description fr text-green">avec sauce au chocolat et fruits</p>
+                            </div>
+                            <!-- Linke Spalte – Gericht 4 -->
+                            <div class="single-menu-item flex flex-col">
+                                <div class="flex space-between align-baseline">
+                                    <h3 class="menu-name subheadings">Frische Früchte
+                                        <span class="sub-fr text-green">Fruits frais</span>
+                                    </h3>
+                                    <div class="dotted-line"></div>
+                                    <p class="menu-price subheadings">7,50 €</p>
+                                </div>
+                            </div>
+                            <!-- Linke Spalte – Gericht 5 -->
+                            <div class="single-menu-item flex flex-col">
+                                <div class="flex space-between align-baseline">
+                                    <h3 class="menu-name subheadings">Joghurt mit Früchten und Honig
+                                        <span class="sub-fr text-green">Yaourt avec fruits et miel</span>
+                                    </h3>
+                                    <div class="dotted-line"></div>
+                                    <p class="menu-price subheadings">8 €</p>
+                                </div>
+                            </div>
+                            <!-- Linke Spalte – Gericht 6 -->
+                            <div class="single-menu-item flex flex-col">
+                                <div class="flex space-between align-baseline">
+                                    <h3 class="menu-name subheadings">Hausgemachter Granola
+                                        <span class="sub-fr text-green">Granola maison</span>
+                                    </h3>
+                                    <div class="dotted-line"></div>
+                                    <p class="menu-price subheadings">8,50 €</p>
+                                </div>
+                                <p class="menu-description">mit Nüssen, Joghurt und Früchten</p>
+                                <p class="menu-description fr text-green">avec noix, yaourt et fruits</p>
+                            </div>
+                            <!-- Linke Spalte – Gericht 7 -->
+                            <div class="single-menu-item flex flex-col">
+                                <div class="flex space-between align-baseline">
+                                    <h3 class="menu-name subheadings">Frischgepresster Orangensaft – 20cl
+                                        <span class="sub-fr text-green">Jus d'orange fraîchement pressé – 20cl</span>
+                                    </h3>
+                                    <div class="dotted-line"></div>
+                                    <p class="menu-price subheadings">5 €</p>
+                                </div>
+                            </div>
+                            <!-- Linke Spalte – Gericht 8 -->
+                            <div class="single-menu-item flex flex-col">
+                                <div class="flex space-between align-baseline">
+                                    <h3 class="menu-name subheadings">Gekochtes Ei
+                                        <span class="sub-fr text-green">Œuf dur</span>
+                                    </h3>
+                                    <div class="dotted-line"></div>
+                                    <p class="menu-price subheadings">3 €</p>
+                                </div>
+                            </div>
+                            <!-- Linke Spalte – Gericht 9 -->
+                            <div class="single-menu-item flex flex-col">
+                                <div class="flex space-between align-baseline">
+                                    <h3 class="menu-name subheadings">Spiegelei
+                                        <span class="sub-fr text-green">Œu au plat</span>
+                                    </h3>
+                                    <div class="dotted-line"></div>
+                                    <p class="menu-price subheadings">3 €</p>
+                                </div>
+                            </div>
+                            <!-- Linke Spalte – Gericht 10 -->
+                            <div class="single-menu-item flex flex-col">
+                                <div class="flex space-between align-baseline">
+                                    <h3 class="menu-name subheadings">Nutella</h3>
+                                    <div class="dotted-line"></div>
+                                    <p class="menu-price subheadings">3 €</p>
+                                </div>
+                            </div>
+                            <!-- Linke Spalte – Gericht 11 -->
+                            <div class="single-menu-item flex flex-col">
+                                <div class="flex space-between align-baseline">
+                                    <h3 class="menu-name subheadings">Hausgemachte Konfitüre
+                                        <span class="sub-fr text-green">Confiture maison</span>
+                                    </h3>
+                                    <div class="dotted-line"></div>
+                                    <p class="menu-price subheadings">3 €</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Frühstück – Ende -->
+                </article>
                 
                 <!-- Speisen -->
                 <article id="food-tab" role="tabpanel" tabindex="0">
                     <div class="flex flex-col align-center gap-s p-b">
-                        <h2 class="headings-small text-green">Speisenkategorie</h2>
+                        <h2 class="headings-small text-green">FLAMMKUCHEN</h2>
                         <p class="short-par">Kategoriebeschreibung. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt.</p>
                     </div>
                     <div class="menu-wrapper flex space-between">
                         <div class="menu-col flex flex-col gap-s">
                             <div class="single-menu-item flex flex-col">
                                 <div class="flex space-between align-baseline">
-                                    <h3 class="menu-name subheadings">Name der Speise</h3>
+                                    <h3 class="menu-name subheadings">Natur
+                                        <span class="sub-fr text-green">
+                                            Nature</span></h3>
                                     <div class="dotted-line"></div>
                                     <p class="menu-price subheadings">12 €</p>
                                 </div>
-                                <p class="menu-description">Beschreibung der Speise, Lorem Ipsum dolor sit amet, consetetur sadipscing elitr,</p>
+                                <p class="menu-description">Speck, Rote Zwiebeln, Creme fraîche</p>
+                                <p class="menu-description fr text-green">Lardons, Oignons Rouges, Crème fraîche</p>
                             </div>
                             <div class="single-menu-item flex flex-col">
                                 <div class="flex space-between align-baseline">
-                                    <h3 class="menu-name subheadings">Name der Speise</h3>
+                                    <h3 class="menu-name subheadings">Emmentaler</h3>
                                     <div class="dotted-line"></div>
-                                    <p class="menu-price subheadings">12 €</p>
+                                    <p class="menu-price subheadings">13 €</p>
                                 </div>
-                                <p class="menu-description">Beschreibung der Speise, Lorem Ipsum dolor sit amet, consetetur sadipscing elitr,</p>
+                                <p class="menu-description">Speck, Rote Zwiebeln, Emmentaler, Creme fraîche</p>
+                                <p class="menu-description fr text-green">Lardons, Oignons Rouges, Emmental, Crème fraîche</p>
                             </div>
                             <div class="single-menu-item flex flex-col">
                                 <div class="flex space-between align-baseline">
-                                    <h3 class="menu-name subheadings">Name der Speise</h3>
+                                    <h3 class="menu-name subheadings">Champignons</h3>
                                     <div class="dotted-line"></div>
-                                    <p class="menu-price subheadings">12 €</p>
+                                    <p class="menu-price subheadings">13 €</p>
                                 </div>
-                                <p class="menu-description">Beschreibung der Speise, Lorem Ipsum dolor sit amet, consetetur sadipscing elitr,</p>
+                                <p class="menu-description">Speck, Rote Zwiebeln, Champignons, Creme</p>
+                                <p class="menu-description fr text-green">Lardons, Oignons Rouges, Champignons, Crème fraîche</p>
+                            </div>
+                            <div class="single-menu-item flex flex-col">
+                                <div class="flex space-between align-baseline">
+                                    <h3 class="menu-name subheadings">Champignons & Emmentaler</h3>
+                                    <div class="dotted-line"></div>
+                                    <p class="menu-price subheadings">14 €</p>
+                                </div>
+                                <p class="menu-description">Speck, Rote Zwiebel, Champignons, Emmentaler, Creme fraîche</p>
+                                <p class="menu-description fr text-green">Lardons, Oignons Rouges, Champignons, Emmental, Crème fraîche</p>
+                            </div>
+                            <div class="single-menu-item flex flex-col">
+                                <div class="flex space-between align-baseline">
+                                    <h3 class="menu-name subheadings">Munster</h3>
+                                    <div class="dotted-line"></div>
+                                    <p class="menu-price subheadings">15 €</p>
+                                </div>
+                                <p class="menu-description">Speck, Rote Zwiebeln, Elsässer Munster Käse AOP, Creme fraîche</p>
+                                <p class="menu-description fr text-green">Lardons, Oignons Rouges, Munster AOP Alsace, Crème fraîche</p>
                             </div>
                         </div>
 
                         <div class="menu-col flex flex-col gap-s">
                             <div class="single-menu-item flex flex-col">
                                 <div class="flex space-between align-baseline">
-                                    <h3 class="menu-name subheadings">Name der Speise</h3>
+                                    <h3 class="menu-name subheadings">Ziegen
+                                        <span class="sub-fr text-green">Chèvre</span>
+                                    </h3>
                                     <div class="dotted-line"></div>
-                                    <p class="menu-price subheadings">12 €</p>
+                                    <p class="menu-price subheadings">15 €</p>
                                 </div>
-                                <p class="menu-description">Beschreibung der Speise, Lorem Ipsum dolor sit amet, consetetur sadipscing elitr,</p>
+                                <p class="menu-description">Speck, Rote Zwiebeln, Ziegenkäse, Apfel, Honig, Creme fraîche</p>
+                                <p class="menu-description fr text-green">Lardons, Oignons Rouges, Fromage de Chèvre, Pommes, Miel, Crème fraîche</p>
                             </div>
                             <div class="single-menu-item flex flex-col">
                                 <div class="flex space-between align-baseline">
-                                    <h3 class="menu-name subheadings">Name der Speise</h3>
+                                    <h3 class="menu-name subheadings">Du Moment</h3>
                                     <div class="dotted-line"></div>
-                                    <p class="menu-price subheadings">12 €</p>
+                                    <p class="menu-price subheadings">17 €</p>
                                 </div>
-                                <p class="menu-description">Beschreibung der Speise, Lorem Ipsum dolor sit amet, consetetur sadipscing elitr,</p>
+                                <p class="menu-description">Italienischer Schinken, Cherrytomaten, Basilikumpesto, Rucola, Rote Zwiebeln, Creme fraîche</p>
+                                <p class="menu-description fr text-green">Jambon italien, tomates cerises, pesto au basilic, roquette, Oignons Rouges, Crème fraîche</p>
                             </div>
                             <div class="single-menu-item flex flex-col">
                                 <div class="flex space-between align-baseline">
-                                    <h3 class="menu-name subheadings">Name der Speise</h3>
+                                    <h3 class="menu-name subheadings">Süßer Apfel Flammkuchen
+                                        <span class="sub-fr text-green">Tarte Flambée sucrée aux Pommes</span>
+                                    </h3>
                                     <div class="dotted-line"></div>
-                                    <p class="menu-price subheadings">12 €</p>
+                                    <p class="menu-price subheadings">13 €</p>
                                 </div>
-                                <p class="menu-description">Beschreibung der Speise, Lorem Ipsum dolor sit amet, consetetur sadipscing elitr,</p>
+                                <p class="menu-description">Apfel, Zimt, Tonka, Crème fraîche</p>
+                                <p class="menu-description fr text-green">Pomme, Cannelle, Tonka, Crème fraîche</p>
+                            </div>
+                            <div class="single-menu-item flex flex-col">
+                                <div class="flex space-between align-baseline">
+                                    <h3 class="menu-name subheadings">Flambiert mit Calvados
+                                        <span class="sub-fr text-green">Flambée au Calvados</span>
+                                    </h3>
+                                    <div class="dotted-line"></div>
+                                    <p class="menu-price subheadings">15 €</p>
+                                </div>
                             </div>
                         </div>
                     </div>
 
                     <div class="empty-separator"></div>
-
+                    <!-- Monatskarte – Beginn -->
                     <div class="flex flex-col align-center gap-s p-b">
-                        <h2 class="headings-small text-green">Speisenkategorie</h2>
-                        <p class="short-par">Kategoriebeschreibung. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt.</p>
+                        <h2 class="headings-small text-green">Monatskarte</h2>
+                        <p class="short-par">Vom 06. März bis 30. März</p>
                     </div>
                     <div class="menu-wrapper flex space-between">
                         <div class="menu-col flex flex-col gap-s">
+                            <!-- Linke Spalte – Gericht 1 -->
                             <div class="single-menu-item flex flex-col">
                                 <div class="flex space-between align-baseline">
-                                    <h3 class="menu-name subheadings">Name der Speise</h3>
+                                    <h3 class="menu-name subheadings">Pastinaken-Cremesuppe
+                                        <span class="sub-fr text-green">Velouté de panais</span></h3>
                                     <div class="dotted-line"></div>
-                                    <p class="menu-price subheadings">12 €</p>
+                                    <p class="menu-price subheadings">9 €</p>
                                 </div>
-                                <p class="menu-description">Beschreibung der Speise, Lorem Ipsum dolor sit amet, consetetur sadipscing elitr,</p>
+                                <p class="menu-description">Lauch und Petersilienschaum  & Toast, Vegan möglich</p>
+                                <p class="menu-description fr text-green">Poireau et espuma de persil & Toast, Possible en Végan</p>
                             </div>
+                            <!-- Linke Spalte – Gericht 2 -->
                             <div class="single-menu-item flex flex-col">
                                 <div class="flex space-between align-baseline">
-                                    <h3 class="menu-name subheadings">Name der Speise</h3>
+                                    <h3 class="menu-name subheadings">Chili con Carne</h3>
                                     <div class="dotted-line"></div>
-                                    <p class="menu-price subheadings">12 €</p>
+                                    <p class="menu-price subheadings">17 €</p>
                                 </div>
-                                <p class="menu-description">Beschreibung der Speise, Lorem Ipsum dolor sit amet, consetetur sadipscing elitr,</p>
+                                <p class="menu-description">Leicht scharf mit Natchos</p>
+                                <p class="menu-description fr text-green">Légèrement épicé avec des nachos</p>
                             </div>
+                            <!-- Linke Spalte – Gericht 3 -->
                             <div class="single-menu-item flex flex-col">
                                 <div class="flex space-between align-baseline">
-                                    <h3 class="menu-name subheadings">Name der Speise</h3>
+                                    <h3 class="menu-name subheadings">Geschmorte Rinderbäckchen 24H in Rotweinsauce
+                                        <span class="sub-fr text-green">
+                                        Joue de Bœuf confite 24H, Sauce au Vin Rouge</span></h3>
                                     <div class="dotted-line"></div>
-                                    <p class="menu-price subheadings">12 €</p>
+                                    <p class="menu-price subheadings">29 €</p>
                                 </div>
-                                <p class="menu-description">Beschreibung der Speise, Lorem Ipsum dolor sit amet, consetetur sadipscing elitr,</p>
+                                <p class="menu-description">Kartoffelgratin, Speckbohnen, Birne in Rotwein, Preiselbeeren</p>
+                                <p class="menu-description fr text-green">Gratin Dauphinois, Haricots au Lard, Poire au vin rouge, Airelles</p>
+                            </div>
+                            <!-- Linke Spalte – Gericht 4 -->
+                            <div class="single-menu-item flex flex-col">
+                                <div class="flex space-between align-baseline">
+                                    <h3 class="menu-name subheadings">Spaghetti Carbonara</h3>
+                                    <div class="dotted-line"></div>
+                                    <p class="menu-price subheadings">19 €</p>
+                                </div>
+                                <p class="menu-description">Speck, Parmesan und Eigelb</p>
+                                <p class="menu-description fr text-green">Lardons, parmesan et jaune d'œuf</p>
+                            </div>
+                            <!-- Linke Spalte – Gericht 5 -->
+                            <div class="single-menu-item flex flex-col">
+                                <div class="flex space-between align-baseline">
+                                    <h3 class="menu-name subheadings">Gambas</h3>
+                                    <div class="dotted-line"></div>
+                                    <p class="menu-price subheadings">26 €</p>
+                                </div>
+                                <p class="menu-description">Gambas in Curry-Orangen-Sauce, Julienne-Gemüse, Rote Bete Reis</p>
+                                <p class="menu-description fr text-green">Sauce au curry et à l'orange, julienne de légumes, riz à la betterave</p>
+                            </div>
+                            <!-- Linke Spalte – Gericht 6 -->
+                            <div class="single-menu-item flex flex-col">
+                                <div class="flex space-between align-baseline">
+                                    <h3 class="menu-name subheadings">Rinderfilet
+                                        <span class="sub-fr text-green">Filet de bœuf</span></h3>
+                                    <div class="dotted-line"></div>
+                                    <p class="menu-price subheadings">32 €</p>
+                                </div>
+                                <p class="menu-description">Rinderfilet in Niedrigtemperatur gegart, Pastinakenpüree, Römersalat, kräftige Sauce und iberische Krokette.</p>
+                                <p class="menu-description fr text-green">Filet de bœuf cuisson basse température, purée de panais, salade romaine, jus corsé et croquette ibérique.</p>
+                            </div>
+                            <!-- Linke Spalte – Gericht 7 -->
+                            <div class="single-menu-item flex flex-col">
+                                <div class="flex space-between align-baseline">
+                                    <h3 class="menu-name subheadings">Gemüsequiche
+                                        <span class="sub-fr text-green">Quiche aux Légumes</span></h3>
+                                    <div class="dotted-line"></div>
+                                    <p class="menu-price subheadings">19 €</p>
+                                </div>
+                                <p class="menu-description">Saisongemüse, mit Salat</p>
+                                <p class="menu-description fr text-green">Légumes de Saison, avec Salade</p>
                             </div>
                         </div>
 
                         <div class="menu-col flex flex-col gap-s">
+                            <!-- Rechte Spalte – Gericht 1 -->
                             <div class="single-menu-item flex flex-col">
                                 <div class="flex space-between align-baseline">
-                                    <h3 class="menu-name subheadings">Name der Speise</h3>
+                                    <h3 class="menu-name subheadings">Croque Monsieur & hausgemachtes Rhabarber-Ketchup
+                                        <span class="sub-fr text-green">Croque-Monsieur & Ketchup de Rhubarbe Maison</span></h3>
                                     <div class="dotted-line"></div>
-                                    <p class="menu-price subheadings">12 €</p>
+                                    <p class="menu-price subheadings">14 €</p>
                                 </div>
-                                <p class="menu-description">Beschreibung der Speise, Lorem Ipsum dolor sit amet, consetetur sadipscing elitr,</p>
+                                <p class="menu-description">Mit Salat</p>
+                                <p class="menu-description fr text-green">Avec salade</p>
                             </div>
+                            <!-- Rechte Spalte – Gericht 2 -->
                             <div class="single-menu-item flex flex-col">
                                 <div class="flex space-between align-baseline">
-                                    <h3 class="menu-name subheadings">Name der Speise</h3>
+                                    <h3 class="menu-name subheadings">Iberische Kroketten
+                                        <span class="sub-fr text-green">Croquettes ibériques</span></h3>
                                     <div class="dotted-line"></div>
-                                    <p class="menu-price subheadings">12 €</p>
+                                    <p class="menu-price subheadings">21 €</p>
                                 </div>
-                                <p class="menu-description">Beschreibung der Speise, Lorem Ipsum dolor sit amet, consetetur sadipscing elitr,</p>
+                                <p class="menu-description">Chili-Mayo, eingelegten Zwiebeln und Salat</p>
+                                <p class="menu-description fr text-green">Mayonnaise au chili, oignons marinés et salade</p>
                             </div>
+                            <!-- Rechte Spalte – Gericht 3 -->
                             <div class="single-menu-item flex flex-col">
                                 <div class="flex space-between align-baseline">
-                                    <h3 class="menu-name subheadings">Name der Speise</h3>
+                                    <h3 class="menu-name subheadings">Gemischter Salat
+                                        <span class="sub-fr text-green">Salade Composé</span></h3>
                                     <div class="dotted-line"></div>
-                                    <p class="menu-price subheadings">12 €</p>
+                                    <p class="menu-price subheadings">14 €</p>
                                 </div>
-                                <p class="menu-description">Beschreibung der Speise, Lorem Ipsum dolor sit amet, consetetur sadipscing elitr,</p>
+                                <p class="menu-description">Veganer Salat nach Art des Hauses</p>
+                                <p class="menu-description fr text-green">Salade végan selon l’humeur de la cuisine</p>
+                            </div>
+                            <!-- Rechte Spalte – Gericht 4 -->
+                            <div class="single-menu-item flex flex-col">
+                                <div class="flex space-between align-baseline">
+                                    <h3 class="menu-name subheadings">Salat mit warmen Ziegenkäse
+                                        <span class="sub-fr text-green">Salade Chèvre Chaud</span></h3>
+                                    <div class="dotted-line"></div>
+                                    <p class="menu-price subheadings">19 €</p>
+                                </div>
+                                <p class="menu-description">Warmer Ziegenkäse, Speck, Apfel, Karamellisierte Körner, Salat</p>
+                                <p class="menu-description fr text-green">Chèvre Chaud, Lard, Pommes, Graines Caramélisées, Salade</p>
+                            </div>
+                            <!-- Rechte Spalte – Gericht 5 -->
+                            <div class="single-menu-item flex flex-col">
+                                <div class="flex space-between align-baseline">
+                                    <h3 class="menu-name subheadings">Spiegelei Zuschlag
+                                        <span class="sub-fr text-green">Supplément Œuf au Plat</span></h3>
+                                    <div class="dotted-line"></div>
+                                    <p class="menu-price subheadings">3 €</p>
+                                </div>
+                            </div>
+                            <!-- Rechte Spalte – Gericht 6 -->
+                            <div class="single-menu-item flex flex-col">
+                                <div class="flex space-between align-baseline">
+                                    <h3 class="menu-name subheadings">Pochiertes Ei Zuschlag
+                                        <span class="sub-fr text-green">Supplément Œuf Poché</span></h3>
+                                    <div class="dotted-line"></div>
+                                    <p class="menu-price subheadings">3 €</p>
+                                </div>
+                            </div>
+                            <!-- Rechte Spalte – Gericht 7 -->
+                            <div class="single-menu-item flex flex-col">
+                                <div class="flex space-between align-baseline">
+                                    <h3 class="menu-name subheadings">Zusatz Salat
+                                        <span class="sub-fr text-green">Supplément Salade</span></h3>
+                                    <div class="dotted-line"></div>
+                                    <p class="menu-price subheadings">3 €</p>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="empty-separator"></div>
+                    <!-- Monatskarte – Ende -->
+
+                    <!-- Gerichte zum Teilen – Start -->
+                    <div class="flex flex-col align-center gap-s p-b">
+                        <h2 class="headings-small text-green">Zum Teilen</h2>
+                        <p class="short-par">Kategoriebeschreibung. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt.</p>
+                    </div>
+                    <div class="menu-wrapper flex space-between">
+                        <div class="menu-col flex flex-col gap-s">
+                            <!-- Linke Spalte – Gericht 1 -->
+                            <div class="single-menu-item flex flex-col">
+                                <div class="flex space-between align-baseline">
+                                    <h3 class="menu-name subheadings">Käseplatte
+                                        <span class="sub-fr text-green">Planchette de fromages</span>
+                                    </h3>
+                                    <div class="dotted-line"></div>
+                                    <p class="menu-price subheadings">19 €</p>
+                                </div>
+                            </div>
+                            <!-- Linke Spalte – Gericht 2 -->
+                            <div class="single-menu-item flex flex-col">
+                                <div class="flex space-between align-baseline">
+                                    <h3 class="menu-name subheadings">Aufschnittplatte
+                                        <span class="sub-fr text-green">Planchette de charcuteries</span>
+                                    </h3>
+                                    <div class="dotted-line"></div>
+                                    <p class="menu-price subheadings">19 €</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="menu-col flex flex-col gap-s">
+                            <!-- Rechte Spalte – Gericht 1 -->
+                            <div class="single-menu-item flex flex-col">
+                                <div class="flex space-between align-baseline">
+                                    <h3 class="menu-name subheadings">Gemischte Platte
+                                        <span class="sub-fr text-green">Planchette Mixte</span>
+                                    </h3>
+                                    <div class="dotted-line"></div>
+                                    <p class="menu-price subheadings">24 €</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Gerichte zum Teilen – Ende -->
+                    <div class="empty-separator"></div>
+                    <!-- Süße Vergnügen – Start -->
+                    <div class="flex flex-col align-center gap-s p-b">
+                        <h2 class="headings-small text-green">Süsse Vergnügen</h2>
+                        <p class="short-par">Kategoriebeschreibung. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt.</p>
+                    </div>
+                    <div class="menu-wrapper flex space-between">
+                        <div class="menu-col flex flex-col gap-s">
+                            <!-- Linke Spalte – Gericht 1 -->
+                            <div class="single-menu-item flex flex-col">
+                                <div class="flex space-between align-baseline">
+                                    <h3 class="menu-name subheadings">Kuchen (ein Stück)
+                                        <span class="sub-fr text-green">Gâteaux (la part)</span>
+                                    </h3>
+                                    <div class="dotted-line"></div>
+                                    <p class="menu-price subheadings">5 €</p>
+                                </div>
+                            </div>
+                            <!-- Linke Spalte – Gericht 2 -->
+                            <div class="single-menu-item flex flex-col">
+                                <div class="flex space-between align-baseline">
+                                    <h3 class="menu-name subheadings">Pavlova</h3>
+                                    <div class="dotted-line"></div>
+                                    <p class="menu-price subheadings">7 €</p>
+                                </div>
+                            </div>
+                            <!-- Linke Spalte – Gericht 3 -->
+                            <div class="single-menu-item flex flex-col">
+                                <div class="flex space-between align-baseline">
+                                    <h3 class="menu-name subheadings">Dekonstruierte Zitronentarte mit Baiser
+                                        <span class="sub-fr text-green">Tarte au Citron Meringuée Déstructurée</span>
+                                    </h3>
+                                    <div class="dotted-line"></div>
+                                    <p class="menu-price subheadings">9 €</p>
+                                </div>
+                            </div>
+                            <!-- Linke Spalte – Gericht 4 -->
+                            <div class="single-menu-item flex flex-col">
+                                <div class="flex space-between align-baseline">
+                                    <h3 class="menu-name subheadings">Crêpe mit Zucker</h3>
+                                    <div class="dotted-line"></div>
+                                    <p class="menu-price subheadings">7,50 €</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="menu-col flex flex-col gap-s">
+                            <!-- Rechte Spalte – Gericht 1 -->
+                            <div class="single-menu-item flex flex-col">
+                                <div class="flex space-between align-baseline">
+                                    <h3 class="menu-name subheadings">Crêpe mit Nutella</h3>
+                                    <div class="dotted-line"></div>
+                                    <p class="menu-price subheadings">8,50 €</p>
+                                </div>
+                            </div>
+                            <!-- Rechte Spalte – Gericht 2 -->
+                            <div class="single-menu-item flex flex-col">
+                                <div class="flex space-between align-baseline">
+                                    <h3 class="menu-name subheadings">Crêpe Suzette mit Grand Marnier</h3>
+                                    <div class="dotted-line"></div>
+                                    <p class="menu-price subheadings">10,50 €</p>
+                                </div>
+                            </div>
+                            <!-- Linke Spalte – Gericht 3 -->
+                            <div class="single-menu-item flex flex-col">
+                                <div class="flex space-between align-baseline">
+                                    <h3 class="menu-name subheadings">Portion Vanille-Tonka Schlagsahne
+                                        <span class="sub-fr text-green">Supplément Chantilly Vanille & Tonka</span>
+                                    </h3>
+                                    <div class="dotted-line"></div>
+                                    <p class="menu-price subheadings">1,50 €</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Süße Vergnügen – Ende -->
+                    
+                    <div class="empty-separator"></div>
+
 
                         <div class="flex flex-col align-center gap-s p-b">
                             <h2 class="headings-small text-green">Saisonale Gerichte</h2>
