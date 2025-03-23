@@ -394,16 +394,23 @@ section {
     background: transparent;
     border: 1px solid #44513E;
     border-radius: 30px;
-    padding: 1rem 2rem;
+    padding: 1rem 1rem;
     width: fit-content;
     font-family: "Montserrat", serif;
     text-transform: uppercase;
-    font-size: 1rem;
+    font-size: 0.7rem;
     letter-spacing: 2px;
     font-weight: 500;
     color: #44513E;
     margin-top: 1rem;
     text-decoration: none;
+}
+
+@media screen and (min-width: 768px) {
+    .btn-green {
+        font-size: 1rem;
+        padding: 1rem 2rem;
+    }
 }
 
 .btn-green:hover,
@@ -441,7 +448,9 @@ section {
     padding: .3rem;
     border: 1px solid #44513E;
     border-radius: 30px;
-    display: inline-block;
+    display: flex;
+    flex-direction: row !important;
+    max-width: 100%;
 }
 
 #food-button,
@@ -456,6 +465,16 @@ section {
 #breakfast-button:hover {
     background: #44513e34;
     color: #44513E;
+}
+
+#food-button:active,
+#drinks-button:active,
+#breakfast-button:active,
+#food-button[aria-selected="true"],
+#drinks-button[aria-selected="true"],
+#breakfast-button[aria-selected="true"]{
+    background: #44513E;
+    color: white;
 }
 
 /* footer */
