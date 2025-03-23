@@ -154,7 +154,7 @@ section {
 }
 
 .hero {
-    height: 80vh;
+    height: 40vh;
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 30px;
@@ -162,12 +162,29 @@ section {
     background-position: center;
 }
 
+@media screen and (min-width: 768px) {
+    .hero {
+        height: 80vh;
+    }
+}
+
 .index-img {
     background-image: url("./assets/l'etable67_hero-img.webp");
+    margin-top: 1rem;
 }
 
 .about-us-img {
     background-image: url("./assets/Hero picture about us.webp");
+    margin-top: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+
+    .index-img,
+    .about-us-img {
+        margin-top: 0;
+    }
+    
 }
 
 .nav-article {
