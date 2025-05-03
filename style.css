@@ -147,7 +147,7 @@ section {
     max-width: 1400px;
     width: 100%;
     margin: auto;
-    padding: 0 1rem;
+    padding: 0 1.6rem;
 }
 
 .caroussel-container {
@@ -191,6 +191,10 @@ section {
 
     .nav-article {
         padding-bottom: 2rem;
+    }
+
+    .p-l {
+        padding-left: 1.2rem;
     }
     
 }
@@ -332,7 +336,7 @@ section {
 } 
 
 .p-l {
-    padding-left: 1.2rem;
+    padding-left: 0;
 }
 
 .p-b {
@@ -644,7 +648,7 @@ footer p {
 }
 
 .contact-data-wrap {
-    width: 16rem;
+    min-width: 16rem;
 }
 
 
