@@ -67,7 +67,7 @@ header {
 
 /* Typography */
 
-p, a, span, label, h1, h2, h3, h4, h5, h6 {
+p, a, span, label, h1, h2, h3, h4, h5, h6, li {
     overflow-wrap: break-word;
     font-family: "Montserrat", serif;
     font-optical-sizing: auto;
@@ -83,6 +83,10 @@ p {
 p.fr {
     font-size: .9rem;
     margin-top: -.6rem;
+}
+
+.p-quote {
+    font-size: .9rem;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -299,6 +303,10 @@ section {
     align-items: center;
 }
 
+.align-top {
+    align-items: top !important;
+}
+
 .align-baseline {
     align-items: baseline;
 }
@@ -307,8 +315,12 @@ section {
     justify-content: space-between;
 }
 
+.space-around {
+    justify-content: space-around;
+}
+
 .short-par {
-    max-width: 50ch;
+    max-width: 60ch;
 }
 
 .text-lg {
@@ -331,6 +343,10 @@ section {
     padding-top: 3rem;
 }
 
+.p-t-1 {
+    padding-top: 1rem;
+}
+
 .col-7 {
     width: 70%;
 }
@@ -351,6 +367,14 @@ section {
     transform: rotate(0.01turn);
 }
 
+.h-300 {
+    min-height: 12rem;
+}
+
+.h-70vh {
+    min-height: 70vh;
+}
+
 /* Caroussel Element */
 
 .swiper-container {
@@ -366,7 +390,6 @@ section {
 .swiper-wrapper {
     align-items: center;
 }
-
 
 .swiper-slide img {
     width: 100%;
@@ -605,6 +628,23 @@ footer p {
 
 .menu-wrapper {
     gap: 4rem;
+}
+
+/*
+    CONTACT
+*/
+
+.contact-hero {
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+}
+
+.contact-data-wrap {
+    width: 16rem;
 }
 
 

@@ -34,24 +34,24 @@
     <main>
         <section class="bg-light">
             <div class="container text-center">
-                <div class="menu-hero">
+                <div class="contact-hero">
                     <div>
                         <span class="subheadings text-green">Wir freuen uns auf Ihren Besuch</span>
                         <h1 class="headings text-green">Kontakt</h1>
                     </div>
                 </div>
-                <div class="flex flex-col gap-m p-b">
-                    <div class="flex flex-col gap-s text-green">
+                <div class="flex flex-row space-around gap-m p-b">
+                    <div class="contact-data-wrap flex flex-col gap-s text-green">
                         <h2 class="subheadings">Adresse</h2>
                         <p>Bahnhofstraße 67<br>4728 Hergenrath, Belgien</p>
                     </div>
     
-                    <div class="flex flex-col gap-s">
+                    <div class="contact-data-wrap flex flex-col gap-s">
                         <h2 class="subheadings text-green">Telefonnummer</h2>
                         <a href="tel:+32470127867" class="tel-link text-green weight-600 text-m">+32 470 12 78 67</a>
                     </div>
     
-                    <div class="flex flex-col gap-s">
+                    <div class="contact-data-wrap flex flex-col gap-s">
                         <h2 class="subheadings text-green">E-Mail</h2>
                         <a href="mailto:info@letable67.com" class="tel-link text-green"><p>info@letable67.com</p></a>
                     </div>
@@ -116,67 +116,72 @@
                 </article>
 
                 <div class="faq p-b p-t">
-                    <h2 class="headings-small text-green p-b">Sie haben Fragen?</h2>
-                    <div class="accordion">
-                        <!-- Frage 1 -->
-                        <div class="accordion-item">
-                            <button id="question1" class="accordion-header" aria-expanded="false" aria-controls="answer1">
-                                <span class="subheadings text-green">kann man bei Ihnen einen Tisch reservieren?</span>
-                                <img class="icon" src="./assets/arrow-down.svg">
-                            </button>
-                            <div id="answer1" class="accordion-panel" role="region" aria-labelledby="question1" hidden>
-                                <p class="text-green">Durch Klick auf eine Frage wird der zugehörige Inhalt angezeigt, während andere Inhalte ausgeblendet bleiben.</p>
+                    <div class="faq p-b p-t">
+                        <h2 class="headings-small text-green p-b">Sie haben Fragen?</h2>
+                        <div class="accordion">
+                            <!-- Frage 1 -->
+                            <div class="accordion-item">
+                                <button id="question1" class="accordion-header" aria-expanded="false" aria-controls="answer1">
+                                    <span class="subheadings text-green">kann man bei Ihnen einen Tisch reservieren?</span>
+                                    <img class="icon" src="./assets/arrow-down.svg">
+                                </button>
+                                <div id="answer1" class="accordion-panel" role="region" aria-labelledby="question1" hidden>
+                                    <p class="text-green">Ja, wir nehmen Reservierungen für den Innenbereich entgegen. Gerne können Sie uns telefonisch oder per E-Mail kontaktieren, um Ihren Tisch zu reservieren.
+                                        <br><br>Bitte beachten Sie, dass wir keine Reservierungen für unsere Terrasse annehmen. Die letzten Reservierungen nehmen wir bis spätestens 19:00 Uhr entgegen.</p>
+                                </div>
                             </div>
-                        </div>
-                
-                        <!-- Frage 2 -->
-                        <div class="accordion-item">
-                            <button id="question2" class="accordion-header" aria-expanded="false" aria-controls="answer2">
-                                <span class="subheadings text-green">Haben Sie parkplätze?</span>
-                                <img class="icon" src="./assets/arrow-down.svg">
-                            </button>
-                            <div id="answer2" class="accordion-panel" role="region" aria-labelledby="question2" hidden>
-                                <p class="text-green">Durch Klick auf eine Frage wird der zugehörige Inhalt angezeigt, während andere Inhalte ausgeblendet bleiben.</p>
+                    
+                            <!-- Frage 2 -->
+                            <div class="accordion-item">
+                                <button id="question2" class="accordion-header" aria-expanded="false" aria-controls="answer2">
+                                    <span class="subheadings text-green">Haben Sie parkplätze?</span>
+                                    <img class="icon" src="./assets/arrow-down.svg">
+                                </button>
+                                <div id="answer2" class="accordion-panel" role="region" aria-labelledby="question2" hidden>
+                                    <p class="text-green">Ja, unser Café verfügt über mehrere eigene Parkplätze. Zusätzlich befindet sich nur wenige Meter vor unserer Einfahrt der öffentliche Hergentrather Parkplatz 
+                                        am Bahnhof – dort gibt es ebenfalls ausreichend Stellplätze.</p>
+                                </div>
                             </div>
-                        </div>
-                
-                        <!-- Frage 3 -->
-                        <div class="accordion-item">
-                            <button id="question3" class="accordion-header" aria-expanded="false" aria-controls="answer3">
-                                <span class="subheadings text-green">Was kann ich tun, wenn ich mir Sorgen um Allergene mache?</span>
-                                <img class="icon" src="./assets/arrow-down.svg">
-                            </button>
-                            <div id="answer3" class="accordion-panel" role="region" aria-labelledby="question3" hidden>
-                                <p class="text-green">Sie können unser Team jederzeit über etwaige Allergien informieren und wir sorgen dafür, 
-                                    dass Sie gut versorgt sind. Unser Team arbeitet hart daran, die meisten Allergene und diätetischen 
-                                    Einschränkungen zu berücksichtigen. Rufen Sie uns einfach an, bevor Sie zu uns kommen, um darüber 
-                                    zu sprechen: <b>+32 470 12 78 67</b></p>
+                    
+                            <!-- Frage 3 -->
+                            <div class="accordion-item">
+                                <button id="question3" class="accordion-header" aria-expanded="false" aria-controls="answer3">
+                                    <span class="subheadings text-green">Was kann ich tun, wenn ich mir Sorgen um Allergene mache?</span>
+                                    <img class="icon" src="./assets/arrow-down.svg">
+                                </button>
+                                <div id="answer3" class="accordion-panel" role="region" aria-labelledby="question3" hidden>
+                                    <p class="text-green">Sie können unser Team jederzeit über etwaige Allergien informieren und wir sorgen dafür, 
+                                        dass Sie gut versorgt sind. Unser Team arbeitet hart daran, die meisten Allergene und diätetischen 
+                                        Einschränkungen zu berücksichtigen. Rufen Sie uns einfach an, bevor Sie zu uns kommen, um darüber 
+                                        zu sprechen: <b>+32 470 12 78 67</b></p>
+                                </div>
                             </div>
-                        </div>
-
-                        <!-- Frage 4 -->
-                        <div class="accordion-item">
-                            <button id="question4" class="accordion-header" aria-expanded="false" aria-controls="answer4">
-                                <span class="subheadings text-green">Sind Hunde erlaubt?</span>
-                                <img class="icon" src="./assets/arrow-down.svg">
-                            </button>
-                            <div id="answer4" class="accordion-panel" role="region" aria-labelledby="question4" hidden>
-                                <p class="text-green">Durch Klick auf eine Frage wird der zugehörige Inhalt angezeigt, während andere Inhalte ausgeblendet bleiben.</p>
+    
+                            <!-- Frage 4 -->
+                            <div class="accordion-item">
+                                <button id="question4" class="accordion-header" aria-expanded="false" aria-controls="answer4">
+                                    <span class="subheadings text-green">Sind Hunde erlaubt?</span>
+                                    <img class="icon" src="./assets/arrow-down.svg">
+                                </button>
+                                <div id="answer4" class="accordion-panel" role="region" aria-labelledby="question4" hidden>
+                                    <p class="text-green">Ja, Hunde sind bei uns herzlich willkommen.
+                                        Lediglich im oberen Bereich des Cafés können wir aus hygienischen Gründen keine Hunde zulassen – wir bitten um Verständnis.</p>
+                                </div>
                             </div>
-                        </div>
-
-                        <!-- Frage 5 -->
-                        <div class="accordion-item">
-                            <button id="question5" class="accordion-header" aria-expanded="false" aria-controls="answer5">
-                                <span class="subheadings text-green">Kann man bei Ihnen essen zum Abholen bestellen? </span>
-                                <img class="icon" src="./assets/arrow-down.svg">
-                            </button>
-                            <div id="answer5" class="accordion-panel" role="region" aria-labelledby="question5" hidden>
-                                <p class="text-green">Durch Klick auf eine Frage wird der zugehörige Inhalt angezeigt, während andere Inhalte ausgeblendet bleiben.</p>
+    
+                            <!-- Frage 5 -->
+                            <div class="accordion-item">
+                                <button id="question5" class="accordion-header" aria-expanded="false" aria-controls="answer5">
+                                    <span class="subheadings text-green">Kann man bei Ihnen essen auch zum Mitnehmen bestellen? </span>
+                                    <img class="icon" src="./assets/arrow-down.svg">
+                                </button>
+                                <div id="answer5" class="accordion-panel" role="region" aria-labelledby="question5" hidden>
+                                    <p class="text-green">Ja, unsere Kuchen sind auch außer Haus erhältlich.
+                                        Für ganze Torten bitten wir um eine Vorbestellung – so können wir alles nach Wunsch vorbereiten.</p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
             </div>
         </section>
     </main>
@@ -199,8 +204,8 @@
             <nav class="footer-nav">
                 <label>Folgen Sie uns</label>
                 <ul>
-                    <li><a href="#">Instagram</a></li>
-                    <li><a href="#">Facebook</a></li>
+                    <li><a href="https://www.instagram.com/letable67/?hl=de" target="_blank">Instagram</a></li>
+                    <li><a href="https://www.facebook.com/p/LEtable-67-61559266874160/?locale=de_DE" target="_blank">Facebook</a></li>
                 </ul>
             </nav>
             <nav class="footer-nav">
@@ -216,12 +221,13 @@
             <nav class="footer-nav">
                 <label>Rechtliches</label>
                 <ul>
-                    <li><a href="#">Impressum</a></li>
-                    <li><a href="#">Datenschutz</a></li>
+                    <li><a href="./imprint.html">Impressum</a></li>
+                    <li><a href="./privacy-policy.html">Datenschutz</a></li>
                 </ul>
             </nav>
         </section>
         <p class="text-center text-white">© 2024 All rights reserved. CAFE 67 GmbH </p>
+        <div class="empty-separator"></div>
     </footer>
     <script src="libs/swiper/swiper-bundle.min.js"></script>
     <script src="./script.js"></script>
