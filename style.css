@@ -608,6 +608,8 @@ footer p {
     margin: 20px 0;
     text-align: left;
     gap: 1rem;
+    padding: 20px 0;
+    border-bottom: .5px dotted #44513E;
 }
 
 .menu-name {
@@ -619,11 +621,7 @@ footer p {
     min-width: 3.2rem;
 }
 
-.dotted-line {
-    flex-grow: 1;
-    border-bottom: 2px dotted #44513E;
-    margin-right: 10px; 
-}
+
 
 .menu-description {
     max-width: 45ch;
@@ -837,6 +835,17 @@ footer p {
 @media (min-width: 768px) {
     .menu-grid {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .dotted-line {
+        flex-grow: 1;
+        border-bottom: 2px dotted #44513E;
+        margin-right: 10px; 
+    }
+
+    .single-menu-item {
+        padding: 0;
+        border-bottom: 0;
     }
     
 }
