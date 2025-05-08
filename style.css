@@ -618,7 +618,8 @@ footer p {
 
 .menu-price {
     margin: 0;
-    min-width: 80px;
+    min-width: 100px;
+    text-align: right;
 }
 
 
