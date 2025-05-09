@@ -1,0 +1,11 @@
+# Aktivieren von mod_rewrite
+RewriteEngine On
+
+# Entferne .html aus URLs (intern umleiten)
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^([^/]+)$ $1.html [L]
+
+# Optional: Weiterleitung von .html auf die Version ohne .html
+# z.B. wenn jemand direkt /seite.html eingibt, wird auf /seite weitergeleitet
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,}\s/([^/]+)\.html\sHTTP
+RewriteRule ^([^/]+)\.html$ /$1 [R=301,L]
